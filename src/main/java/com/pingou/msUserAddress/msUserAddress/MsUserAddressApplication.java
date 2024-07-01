@@ -1,13 +1,13 @@
-package com.pingou.msuseradress;
+package com.pingou.msUserAddress.msUserAddress;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class  MsUserAdressApplication {
+public class MsUserAddressApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsUserAdressApplication.class, args);
+		SpringApplication.run(MsUserAddressApplication.class, args);
 	}
 
 }

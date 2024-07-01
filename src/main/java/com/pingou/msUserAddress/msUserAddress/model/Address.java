@@ -1,4 +1,4 @@
-package com.pingou.msuseradress.entity;
+package com.pingou.msUserAddress.msUserAddress.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,18 +12,16 @@ import lombok.*;
 @Table(name = "address")
 public class Address {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
+
+    private boolean isDefault;
 
     private String userId;
-    private boolean isDefault;
-    private String street;
-    private String number;
+    private int number;
     private String complement;
     private String neighborhood;
-    private String postalCode;
-    private double latitude;
-    private double longitude;
     private String city;
     private String state;
+    private String postalCode;
 }
