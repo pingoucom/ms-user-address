@@ -1,12 +1,12 @@
-package com.pingou.msUserAddress.msUserAddress.controller;
+package com.pingou.msuseraddress.controller;
+import com.pingou.msuseraddress.model.Address;
+import com.pingou.msuseraddress.model.AddressDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.pingou.msUserAddress.msUserAddress.model.Address;
-import com.pingou.msUserAddress.msUserAddress.model.AddressDto;
-import com.pingou.msUserAddress.msUserAddress.service.AddressService;
+import com.pingou.msuseraddress.service.AddressService;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package com.pingou.msUserAddress.msUserAddress.util;
+package com.pingou.msuseraddress.util;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pingou.msUserAddress.msUserAddress.model.Address;
-import com.pingou.msUserAddress.msUserAddress.model.AddressDto;
+import com.pingou.msuseraddress.model.Address;
+import com.pingou.msuseraddress.model.AddressDto;
 
 public class Utill {
     public Address addressDtoToAddress(AddressDto addressDto) {

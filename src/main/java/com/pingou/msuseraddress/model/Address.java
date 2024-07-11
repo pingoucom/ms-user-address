@@ -1,4 +1,4 @@
-package com.pingou.msUserAddress.msUserAddress.model;
+package com.pingou.msuseraddress.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -18,10 +18,11 @@ public class Address {
     private boolean isDefault;
 
     private String userId;
-    private int number;
+    private String number;
     private String complement;
     private String neighborhood;
     private String city;
     private String state;
+    private String street;
     private String postalCode;
 }

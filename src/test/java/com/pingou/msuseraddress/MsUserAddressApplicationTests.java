@@ -1,4 +1,4 @@
-package com.pingou.msUserAddress.msUserAddress;
+package com.pingou.msuseraddress;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

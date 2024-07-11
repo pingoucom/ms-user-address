@@ -1,26 +1,26 @@
-package com.pingou.msUserAddress.msUserAddress.service;
+package com.pingou.msuseraddress.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.pingou.msuseraddress.model.Address;
+import com.pingou.msuseraddress.model.AddressDto;
+import com.pingou.msuseraddress.util.Utill;
 import org.springframework.stereotype.Service;
 
-import com.pingou.msUserAddress.msUserAddress.model.Address;
-import com.pingou.msUserAddress.msUserAddress.model.AddressDto;
-import com.pingou.msUserAddress.msUserAddress.repository.AddressRepository;
-import com.pingou.msUserAddress.msUserAddress.util.Utill;
+import com.pingou.msuseraddress.repository.AddressRepository;
 
 @Service
 public class AddressService {
-
-    @Autowired
     AddressRepository addressRepository;
 
-    @Autowired
     Utill utill;
 
+    public AddressService(AddressRepository addressRepository) {
+        this.addressRepository = addressRepository;
+        this.utill = new Utill();
+    }
    
     public List<AddressDto> getAllAddress(){
         List<Address> addressList=addressRepository.findAll();

@@ -1,4 +1,4 @@
-package com.pingou.msUserAddress.msUserAddress.model;
+package com.pingou.msuseraddress.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,8 @@ import lombok.NoArgsConstructor;
 public class AddressDto {
     private String id;
     private String userId;
-    private int number;
+    private String number;
+    private String street;
     private boolean isDefault;
     private String complement;
     private String neighborhood;
