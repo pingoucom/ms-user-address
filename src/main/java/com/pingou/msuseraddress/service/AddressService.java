@@ -52,9 +52,7 @@ public class AddressService {
     }
 
     public Address saveAddress(AddressDto addressDto){
-        addressRepository.save(utill.addressDtoToAddress(addressDto));
-        Address address = utill.addressDtoToAddress(addressDto);
-        return  address;
+        return addressRepository.save(utill.addressDtoToAddress(addressDto));
     }
 
     public AddressDto updateAddress(AddressDto addressDto) {
